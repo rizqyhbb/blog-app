@@ -3,4 +3,5 @@ export interface IPostMetadata {
   subtitle: string
   date: string
   slug: string
+  description: string
 }

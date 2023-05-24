@@ -28,7 +28,7 @@ const PostPage = (props: any) => {
   const post = getPostContent(slug)
   return (
     <div>
-      <h1 className='text-3xl lg:text-5xl font-black'>{post.data.title}</h1>
+      <h1 className='text-4xl lg:text-5xl font-black mb-6'>{post.data.title}</h1>
       <article className='prose min-w-full'>
         <Markdown options={{ overrides: { pre: CodeBlock } }}>{post.content}</Markdown>
       </article>

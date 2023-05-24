@@ -14,8 +14,8 @@ const CodeBlock: FC<ICode> = ({ children }) => {
   const language = className?.replace("lang-", "");
   return (
     <div>
-      <div className='flex justify-between item-scenter bg-slate-600 px-4 py-1 rounded-t-lg'>
-        <span>index.ts</span>
+      <div className='flex justify-between item-scenter bg-slate-600 px-4 py-1 rounded-t-lg text-white'>
+        <span>{language}</span>
         <button>Copy</button>
       </div>
       <SyntaxHighlighter language={language} style={a11yDark} customStyle={{ marginTop: 0, borderRadius: "0 0 8px 8px", }}>
