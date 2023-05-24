@@ -28,13 +28,10 @@ const PostPage = (props: any) => {
   const post = getPostContent(slug)
   return (
     <div>
-      <h1>{post.data.title}</h1>
-      <Markdown
-        options={{
-          forceBlock: true,
-          overrides: { pre: { component: CodeBlock } }
-        }}>
-        {post.content}</Markdown>
+      <h1 className='text-3xl lg:text-5xl font-black'>{post.data.title}</h1>
+      <article className='prose min-w-full'>
+        <Markdown options={{ overrides: { pre: CodeBlock } }}>{post.content}</Markdown>
+      </article>
 
     </div>
   )

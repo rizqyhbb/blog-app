@@ -20,3 +20,9 @@ This articles will show you the most minimal setup to run your Postgre Sql as a 
 ````javascript
 const text = "this is just an example\n```javascript\nconsole.log(`hello`)\n```\n`this is test`";
 ````
+`hello`
+
+| Syntax      | Description |
+| ----------- | ----------- |
+| Header      | Title       |
+| Paragraph   | Text        |

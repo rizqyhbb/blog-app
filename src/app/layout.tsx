@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import './globals.css'
 import { Inter } from 'next/font/google'
+import LargeLogo from '@/components/logo/LargeLogo'
+import MiniLogo from '@/components/logo/MiniLogo'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,16 +19,19 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className='mx-auto px-5 md:px-14 lg:max-w-6xl bg-[#3F1651] text-slate-400'>
-          <div className='py-6'>
-            <Link href={'/'}>
-              <h1>Kiki&apos;s blog</h1>
-            </Link>
+        <div className='py-6 border-b-[1px] mb-10'>
+          <div className='hidden lg:block'>
+            <LargeLogo />
           </div>
+          <div className='block lg:hidden'>
+            <MiniLogo />
+          </div>
+        </div>
+        <div className='mx-auto px-5 md:px-14 lg:max-w-6xl'>
           {children}
-          <div className='py-6'>
-            <p>rizqyhbb@gmail.com</p>
-          </div>
+        </div>
+        <div className='py-6'>
+          <p>rizqyhbb@gmail.com</p>
         </div>
       </body>
     </html>
