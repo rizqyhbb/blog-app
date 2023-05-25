@@ -5,7 +5,7 @@ interface IIcon {
   children: ReactNode
 }
 const Icon: FC<IIcon> = ({ className, children }) => (
-  <svg viewBox="0 0 30 30" width="240px" height="240px" className={className}>
+  <svg viewBox="0 0 30 30" className={className}>
     {children}
   </svg>
 )
@@ -26,7 +26,17 @@ const Linkedin = ({ className }: { className?: string }) => {
   )
 }
 
+const Logo = ({ className }: { className?: string }) => (
+  <Icon className={className}>
+    <path d="M2.41611 4.74748C2.41611 3.4086 3.49784 2.32323 4.83221 2.32323H27.5839C28.9183 2.32323 30 3.4086 30 4.74748V27.5758C30 28.9146 28.9183 30 27.5839 30H4.83221C3.49784 30 2.41611 28.9146 2.41611 27.5758V4.74748Z" fill="black" />
+    <path d="M0 2.42424C0 1.08537 1.08173 0 2.41611 0H25.1678C26.5022 0 27.5839 1.08537 27.5839 2.42424V25.2525C27.5839 26.5914 26.5022 27.6768 25.1678 27.6768H2.41611C1.08173 27.6768 0 26.5914 0 25.2525V2.42424Z" fill="#FACC15" />
+    <path d="M6.39119 18.7879V8.79706H8.79786V13.0217H8.92913L12.2207 8.79706H15.0552L11.5254 13.2559L15.1184 18.7879H12.2401L9.76052 14.8608L8.79786 16.0804V18.7879H6.39119Z" fill="black" />
+    <path d="M21.8923 18.7879V20.5343H15.246V18.7879H21.8923Z" fill="black" />
+  </Icon>
+)
+
 export default {
   Github,
-  Linkedin
+  Linkedin,
+  Logo
 }

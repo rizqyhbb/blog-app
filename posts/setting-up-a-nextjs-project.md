@@ -2,7 +2,7 @@
 title: "Setting Up a Next.js Project: Building Fast and SEO-Friendly Web Applications with React"
 subtitle: "Step-by-Step Guide to Setting Up a Next.js Project: Harness the Power of Server-Side Rendering and Static Site Generation for High-Performance Web Applications"
 description: "Learn how to set up a Next.js project from scratch. Build fast and SEO-friendly web applications using React with server-side rendering and static site generation."
-date: "2023-05-24"
+date: "2023-04-24"
 ---
 
 ## Outline of the Article:

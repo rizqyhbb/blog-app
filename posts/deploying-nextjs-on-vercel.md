@@ -2,7 +2,7 @@
 title: "Deploying Next.js on Vercel: A Comprehensive Guide to Seamless Performance"
 subtitle: "Enhance Speed and User Experience with Effortless Deployment of Next.js Applications on Vercel"
 description: "Learn how to deploy Next.js applications on Vercel for seamless performance. Enhance your site's speed and user experience with this comprehensive guide."
-date: "2023-05-24"
+date: "2023-05-22"
 ---
 
 ## Outline of the Article

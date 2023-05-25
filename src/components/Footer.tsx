@@ -5,8 +5,8 @@ import MiniLogo from './logo/MiniLogo'
 
 const Footer = () => {
   return (
-    <footer className='bg-black text-white py-7'>
-      <div className='mx-auto px-5 md:px-14 lg:max-w-6xl lg:py-4'>
+    <footer className='bg-black text-white'>
+      <div className='mx-auto px-5 md:px-14 lg:max-w-6xl py-8'>
 
         <div className='flex items-center justify-center gap-8'>
           <div className='border border-slate-600 w-full' />
@@ -19,16 +19,15 @@ const Footer = () => {
           <div className='border border-slate-600 w-full' />
         </div>
 
-        <div className='flex flex-col items-center my-6'>
+        <div className='flex flex-col items-center mt-6 gap-4'>
           <div>
             <MiniLogo />
           </div>
           <div>
-            <p>Made by rizqy 2023</p>
+            <p>Rizqy 2023 | Stay connected | Stay inspired</p>
           </div>
+          <p>rizqyhbb@gmail.com</p>
         </div>
-
-        <p>rizqyhbb@gmail.com</p>
       </div>
     </footer>
   )
