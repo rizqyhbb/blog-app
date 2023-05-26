@@ -22,3 +22,26 @@ export const getPostsMetadata = (): IPostMetadata[] => {
 
   return post
 }
+
+export const getPostMetadata = (slug: string): IPostMetadata => {
+  const dir = 'posts/'
+  const post = readFileSync(`${dir}${slug}.md`)
+  const matterResult = matter(post)
+
+  return {
+    title: matterResult.data.title,
+    subtitle: matterResult.data.subtitle,
+    date: matterResult.data.date,
+    slug,
+    description: matterResult.data.description
+  }
+}
+
+export const getPostContent = (slug: string) => {
+  const dir = "posts/";
+  const file = `${dir}${slug}.md`;
+  const content = readFileSync(file, "utf-8");
+  const matterResult = matter(content)
+
+  return matterResult
+}

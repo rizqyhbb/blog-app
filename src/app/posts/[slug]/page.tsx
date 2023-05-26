@@ -2,17 +2,7 @@ import { readFileSync } from 'fs';
 import Markdown from 'markdown-to-jsx';
 import React from 'react'
 import CodeBlock from '../../../components/markdown/CodeBlock';
-import matter from 'gray-matter';
-import { getPostsMetadata } from '@/utils/postHelper';
-
-const getPostContent = (slug: string) => {
-  const dir = "posts/";
-  const file = `${dir}${slug}.md`;
-  const content = readFileSync(file, "utf-8");
-  const matterResult = matter(content)
-
-  return matterResult
-}
+import { getPostContent, getPostMetadata, getPostsMetadata } from '@/utils/postHelper';
 
 export const generateStaticParams = async () => {
   const posts = getPostsMetadata()
@@ -20,6 +10,15 @@ export const generateStaticParams = async () => {
   return posts.map((post) => ({
     slug: post.slug
   }))
+}
+
+export const generateMetadata = async ({ params }: { params: { slug: string } }) => {
+  const matter = getPostMetadata(params.slug)
+
+  return {
+    title: matter.title,
+    description: matter.description,
+  }
 }
 
 const PostPage = (props: any) => {

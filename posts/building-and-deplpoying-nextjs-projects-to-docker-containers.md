@@ -2,7 +2,7 @@
 title: "Building and Deploying Next.js Projects to Docker Containers: A Comprehensive Guide for Improved Performance"
 subtitle: "Streamline Deployment and Boost Performance with Next.js and Docker Integration"
 description: "Learn how to build and deploy Next.js projects to Docker containers for improved performance. A comprehensive guide for seamless integration."
-date: "2023-05-24"
+date: "2023-02-24"
 ---
 
 ## Outline of the Article
