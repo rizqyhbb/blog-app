@@ -1,5 +1,7 @@
 # Simple blog app
  
+ Try the App [here](https://dev.rizqyhbb.vercel.app/)
+ 
  This blog app is just one of my simple project. The main purpose is to be my private notes, cause it'll be better to write it down on the web and access it everywhere with style that I want. Also feel free to use this repo, if you want to add some post just add it in `/posts` and add you `.md` file. You have to add meta for `.md` files like this or see the example inside the `/posts` directory:
 
  ```
