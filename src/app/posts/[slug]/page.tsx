@@ -1,4 +1,3 @@
-import { readFileSync } from 'fs';
 import Markdown from 'markdown-to-jsx';
 import React from 'react'
 import CodeBlock from '../../../components/markdown/CodeBlock';
